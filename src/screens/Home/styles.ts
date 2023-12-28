@@ -4,19 +4,20 @@ export const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: '#fff',
+      justifyContent: "space-between"
     },
     appTitleView: {
       flexDirection: "row",
       gap: 6,
-      marginTop: 30,
+      marginTop: 18,
       alignSelf: "center",
-      marginBottom: 80
+      marginBottom: 60
     },
     contentView: {
       flex: 1,
       alignItems: "center", 
       justifyContent: "center",
-      gap: 16,
+      gap: 18,
     },
     appTitle: {
       color: "#3C184E",
@@ -63,6 +64,6 @@ export const styles = StyleSheet.create({
     },
     dogImage: {
       alignSelf: "flex-end",
-      flex: 2
+      //flex: 2
     }
   });
