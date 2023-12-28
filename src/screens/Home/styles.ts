@@ -9,13 +9,14 @@ export const styles = StyleSheet.create({
       flexDirection: "row",
       gap: 6,
       marginTop: 30,
-      alignSelf: "center"
+      alignSelf: "center",
+      marginBottom: 80
     },
     contentView: {
       flex: 1,
       alignItems: "center", 
       justifyContent: "center",
-      gap: 30
+      gap: 16,
     },
     appTitle: {
       color: "#3C184E",
@@ -23,11 +24,14 @@ export const styles = StyleSheet.create({
       fontFamily: 'Rubik_500Medium',
       fontSize: 18,
     },
+    viewSlogan: {
+      flexDirection: "column-reverse"
+    },
     sloganText: {
       fontFamily: "Merriweather_900Black",
       color: "#3C184E",
       fontSize: 32,
-      width: 263,
+      width: 264,
       textAlign: "center"
     },
     textDescription: {
@@ -39,7 +43,7 @@ export const styles = StyleSheet.create({
     },
     mainButton: {
       width: 181,
-      height: 45,
+      height: 44,
       backgroundColor: '#713FFF',
       paddingVertical: 12,
       paddingHorizontal: 4,
@@ -56,5 +60,9 @@ export const styles = StyleSheet.create({
       color: '#3C184E',
       fontFamily: 'Rubik_400Regular',
       fontSize: 18,
+    },
+    dogImage: {
+      alignSelf: "flex-end",
+      flex: 2
     }
   });

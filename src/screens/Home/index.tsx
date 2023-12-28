@@ -21,7 +21,7 @@ export function Home() {
           <Text style={styles.appTitle}>HelpDog</Text>
         </View>
         <View style={styles.contentView}>
-          <View style={{flexDirection: "column-reverse"}}>
+          <View style={styles.viewSlogan}>
             <Image source={require('../../../assets/vector-1.png')}/>
             <Text style={styles.sloganText}>Ajude quem precisa de ajuda</Text>
           </View>
@@ -35,6 +35,7 @@ export function Home() {
             </TouchableOpacity>
           </Animated.View>
         </View>
+          <Image style={styles.dogImage} source={require('../../../assets/img.png')}/>
       </SafeAreaView>
     ); 
   }
