@@ -1,6 +1,7 @@
 import { useNavigation } from "@react-navigation/native";
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import Animated, { FadeInRight, FadeOut } from "react-native-reanimated";
+import { styles } from "./styles";
 
 export function Login() { 
     const {navigate} = useNavigation()
@@ -19,25 +20,3 @@ export function Login() {
       </View>
     ); 
   }
-
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    mainButton: {
-      width: 181,
-      height: 45,
-      backgroundColor: '#713FFF',
-      paddingVertical: 12,
-      paddingHorizontal: 4,
-      borderRadius: 40,
-      gap: 10
-    },
-    textMainButton: {
-      textAlign: "center",
-      color: '#fff',
-    }
-  });
