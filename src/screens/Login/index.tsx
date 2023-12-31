@@ -23,7 +23,11 @@ export function Login() {
         </View>
         <View style={styles.contentContainer}>
           <Animated.View entering={FadeInRight} exiting={FadeOut}>
-            <View style={{gap: 8}}>
+            <View style={styles.viewLoginMessage}>
+              <Text style={{fontFamily: "Archivo_500Medium", fontSize: 16}}>Bem-vindo</Text>
+              <Text style={styles.loginMessage}>Faça login na sua conta</Text>
+            </View>
+            <View style={styles.viewInputs}>
               <Text>E-mail</Text>
               <TextInput
                 autoCapitalize="none"
@@ -34,13 +38,25 @@ export function Login() {
               <TextInput
                 autoCapitalize="none"
                 secureTextEntry
-                placeholder="0123456789"
+                placeholder="*********"
                 style={styles.textInputs}
               />
             </View>
-            <TouchableOpacity onPress={goToMainScreen} style={styles.mainButton}>
-              <Text style={styles.textMainButton}>Entrar na Conta</Text>
-            </TouchableOpacity>
+            <View style={styles.viewButtons}>
+              <TouchableOpacity onPress={goToMainScreen} style={styles.mainButton}>
+                <Text style={styles.textMainButton}>Entrar na conta</Text>
+              </TouchableOpacity>
+              <TouchableOpacity onPress={goToMainScreen} style={styles.AlternativeLoginButton}>
+                <Image style={styles.iconGoogle} source={require('../../../assets/icon-google.png')}/>
+                <Text style={styles.textAlternativeLoginButton}>Continue com Google</Text>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.viewRegister}>
+              <Text>Não tem uma conta?</Text>
+              <TouchableOpacity onPress={() => console.log('cadastro')}>
+                <Text style={styles.textRegister}>Cadastre-se</Text>
+              </TouchableOpacity>
+            </View>
           </Animated.View>
         </View>
       </SafeAreaView>
