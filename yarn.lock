@@ -1180,6 +1180,11 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
+"@expo-google-fonts/archivo@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/archivo/-/archivo-0.2.3.tgz#0acf86c8e182545c27af4f2382299f9eaba63269"
+  integrity sha512-WD3Ad+oMOqCCBwJDPJcmFWyhqT2tF1aPOtKPT0xZejYMExcHCiqbog1om/mAupR1A+7q2f5qt1lEBecDiG+ClA==
+
 "@expo-google-fonts/merriweather@^0.2.3":
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@expo-google-fonts/merriweather/-/merriweather-0.2.3.tgz#b28dd46ca4424f74470b7f8c2c30928241c1c19d"
@@ -3223,6 +3228,11 @@ expo-asset@~8.10.1:
     md5-file "^3.2.3"
     path-browserify "^1.0.0"
     url-parse "^1.5.9"
+
+expo-checkbox@~2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/expo-checkbox/-/expo-checkbox-2.4.0.tgz#5d5bb82117f4d781eb1d4db0ff96e1f0a4a0547a"
+  integrity sha512-ZEe79B73I+NDkLZQ2pR1E5rv9ey1oleNI/s2/Jdb9zKWztS0KVU2K+drFn2t/zyoSbR1U+CNwik2v7h6JxrXcA==
 
 expo-constants@~14.4.2:
   version "14.4.2"

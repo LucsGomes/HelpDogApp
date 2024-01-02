@@ -6,8 +6,8 @@ export function Routes(){
     const Stack = createNativeStackNavigator();
     
     return (
-        <Stack.Navigator>
-          <Stack.Screen options={{header: () => null}} name="Home" component={Home}/>
+        <Stack.Navigator screenOptions={{headerShown: false}}>
+          <Stack.Screen name="Home" component={Home}/>
           <Stack.Screen name="Login" component={Login}/>
         </Stack.Navigator>
     )
