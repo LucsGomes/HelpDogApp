@@ -6,17 +6,29 @@ export const styles = StyleSheet.create({
       backgroundColor: '#fff',
     },
     appTitleView: {
-      flexDirection: "row",
-      gap: 6,
+      gap: 8,
       marginTop: 18,
-      alignSelf: "center",
-      marginBottom: 60
+      marginBottom: 60,
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center"
+    },
+    backButtonImage: {
+      width: 24,
+      height: 24,
+      marginLeft: 20,
+    },
+    viewLogo: {
+      flexDirection: "row",
+      gap: 4,
+      alignItems: "center",
     },
     appTitle: {
       color: "#3C184E",
       textAlign: 'center',
       fontFamily: 'Rubik_500Medium',
       fontSize: 18,
+      
     },
     contentContainer: {
       flex: 1,
@@ -25,6 +37,10 @@ export const styles = StyleSheet.create({
     },
     viewLoginMessage: {
       gap: 4
+    },
+    welcomeMessage: {
+      fontFamily: "Archivo_500Medium", 
+      fontSize: 16
     },
     loginMessage: {
       color: "#1A202C",
@@ -57,6 +73,12 @@ export const styles = StyleSheet.create({
     },
     viewInputs: {
       gap: 16,
+    },
+    rememberMeView: {
+      flexDirection: "row",
+      justifyContent: "space-between",
+      marginTop: 24,
+      marginBottom: 20
     },
     viewButtons: {
       gap: 18,

@@ -2,6 +2,8 @@ import { useNavigation } from "@react-navigation/native";
 import { View, Text, TouchableOpacity, Image, SafeAreaView, StatusBar, Platform, TextInput } from "react-native";
 import Animated, { FadeInRight, FadeOut } from "react-native-reanimated";
 import { styles } from "./styles";
+import { RememberMe } from "../../components/Remember";
+import backButton from "../../../assets/arrow-left.png"
 
 export function Login() { 
 
@@ -18,13 +20,20 @@ export function Login() {
         marginTop: isAndroid ? StatusBar.currentHeight : 0
       }]}>
         <View style={styles.appTitleView}>
-          <Image source={require('../../../assets/pet-friendly-1.png')} />
-          <Text style={styles.appTitle} allowFontScaling={false}>HelpDog</Text>
+          <TouchableOpacity onPress={goToMainScreen}>
+            <Image style={styles.backButtonImage} source={backButton}/>
+          </TouchableOpacity>
+          <View style={styles.viewLogo}>
+            <Image source={require('../../../assets/pet-friendly-1.png')} />
+            <Text style={styles.appTitle} allowFontScaling={false}>HelpDog</Text>
+          </View>
+            <View style={styles.backButtonImage}>
+            </View>
         </View>
         <View style={styles.contentContainer}>
           <Animated.View entering={FadeInRight} exiting={FadeOut}>
             <View style={styles.viewLoginMessage}>
-              <Text style={{fontFamily: "Archivo_500Medium", fontSize: 16}}>Bem-vindo</Text>
+              <Text style={styles.welcomeMessage}>Bem-vindo</Text>
               <Text style={styles.loginMessage}>Faça login na sua conta</Text>
             </View>
             <View style={styles.viewInputs}>
@@ -32,6 +41,8 @@ export function Login() {
               <TextInput
                 autoCapitalize="none"
                 placeholder="exemplo@gmail.com"
+                keyboardType="email-address"
+                autoComplete="email"
                 style={styles.textInputs}
               />
               <Text>Senha</Text>
@@ -39,8 +50,16 @@ export function Login() {
                 autoCapitalize="none"
                 secureTextEntry
                 placeholder="*********"
+                keyboardType="default"
+                autoComplete="password"
                 style={styles.textInputs}
               />
+            </View>
+            <View style={styles.rememberMeView}>
+              <RememberMe/>
+              <TouchableOpacity>
+                <Text style={{color: '#713FFF'}}>Esqueceu sua senha?</Text>
+              </TouchableOpacity>
             </View>
             <View style={styles.viewButtons}>
               <TouchableOpacity onPress={goToMainScreen} style={styles.mainButton}>
