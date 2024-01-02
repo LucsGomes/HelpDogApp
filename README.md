@@ -1,4 +1,4 @@
-<h1>HelloDogApp<h1>
+<h1>HelpDogApp<h1>
   React Native | Typescript | CSS | Expo GO
   
 <span></span>
