@@ -42,6 +42,9 @@ export const styles = StyleSheet.create({
       fontFamily: 'Rubik_400Regular',
       fontSize: 18,
     },
+    viewButtons: {
+      zIndex: 2
+    },
     mainButton: {
       width: 181,
       height: 44,
@@ -49,6 +52,7 @@ export const styles = StyleSheet.create({
       paddingVertical: 12,
       paddingHorizontal: 4,
       borderRadius: 40,
+      marginBottom: 20
     },
     textMainButton: {
       textAlign: "center",
@@ -64,6 +68,6 @@ export const styles = StyleSheet.create({
     },
     dogImage: {
       alignSelf: "flex-end",
-      //flex: 2
+      //flex: 1
     }
   });
