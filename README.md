@@ -27,7 +27,6 @@ npm run start
 See in your device using Expo Go
 
 ## 🛠 Used Tools ⌨
-- ReactJS
 - React Native
 - Typescript
 - Expo
