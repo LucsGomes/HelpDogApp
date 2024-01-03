@@ -41,7 +41,7 @@ export function Home() {
           },
         ]}
       >
-              <View style={styles.appTitleView}>
+        <View style={styles.appTitleView}>
           <Image source={Logo} />
           <Text style={styles.appTitle} allowFontScaling={false}>
             HelpDog
@@ -67,7 +67,6 @@ export function Home() {
               </Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={{}}
               onPress={() => callToNumber("+552199999999")}
             >
               <Text style={styles.textContactButton}>Entrar em contato</Text>
